@@ -11,8 +11,8 @@
 
  ## LINKS
   *MDN Web Docs on JS: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-  *
-  *
+  *Help on geeksforgeeks https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript/
+  *CharAt String on W3 Schools https://www.w3schools.blog/charat-string-javascript
   *
   *
  

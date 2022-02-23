@@ -2,7 +2,7 @@
 function generatePassword() {
   var str = ""
   var pass = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz1234567890' + '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~'
-  for (i = 0; i == 8; i++) {
+  for (i = 0; i = 8; i++) {
     var randomstr = Math.ceil(Math.random() * pass.length + 1);
     str += pass.charAt(randomstr);
     console.log(str)

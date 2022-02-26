@@ -17,7 +17,7 @@ function validatePassword() {
   else if (result > 128) {
     str = "wrong selection";
     window.alert("Password must be no more than 128 characters!");
-    
+
     //next few pop-ups prompt user to choose whether they want or don't want
     // uppercase, lowercase, numbers, and/or special characters
   } else {
@@ -25,8 +25,10 @@ function validatePassword() {
    askLowerCase = confirm("Do you want to use lowercase letters?");
    askNumeric = confirm("Do you want to use numbers?");
    askSpecialChar = confirm("Do you want to use special characters?");
-  };
 
+   
+  };
+  // TODO -
   // else {
   //   var pass = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz1234567890' + '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~';
   //   for (i = 1; i <= result; i++) {

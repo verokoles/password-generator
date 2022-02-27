@@ -95,7 +95,7 @@
 
 <a name="link-to-my-page"></a>
  ## 4. Link To Project in My Github Pages:
- [ My Password Generator]()
+   [My Password Generator](https://verokoles.github.io/password-generator/)
 
  ## 5. Helpful Links
   * [MDN Web Docs on JS:](https://developer.mozilla.org/en-US/docs/Web/JavaScript)

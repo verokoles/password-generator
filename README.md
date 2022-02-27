@@ -48,12 +48,12 @@
   ![Initializing of all the arrays ](assets/screenshots/constand-string-set.png) 
 
   
-     If they were to choose 7 or lower, the window prompt would come back as incorrect and the window alert would ask them to choose a number between 8 and 128 again.
+      If they were to choose 7 or lower, the window prompt would come back as incorrect and the window alert would ask them to choose a number between 8 and 128 again.
   ![If a number less than 8 is chosen](assets/screenshots/low-number-choice-alert.png)
 
   
-     Choosing a number 129 and above would prompt the alert for choosing a number no greater than 128. 
-  ![If a number greater than 128 is chosen](assets\screenshots/high-number-choice-alert.png)
+      Choosing a number 129 and above would prompt the alert for choosing a number no greater than 128. 
+  ![If a number greater than 128 is chosen](assets/screenshots/high-number-choice-alert.png)
 
      The next few pop-ups prompt the user to choose whether they want or don't want
      uppercase, lowercase, numbers, and/or special characters. They simply choose 'OK' for yes and 'Cancel' for no.
@@ -97,6 +97,7 @@
  ## 4. Link To Project in My Github Pages:
    [My Password Generator](https://verokoles.github.io/password-generator/)
 
+<a name="help"></a>
  ## 5. Helpful Links
   * [MDN Web Docs on JS:](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   * [Help on geeksforgeeks](https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript/)

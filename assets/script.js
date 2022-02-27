@@ -1,7 +1,4 @@
-var upperCase = "";
-var lowerCase = "";
-var numeric = "";
-var specialChar = "";
+
 
 //  create function to validate Password
 function validatePassword() {
@@ -21,28 +18,72 @@ function validatePassword() {
     //next few pop-ups prompt user to choose whether they want or don't want
     // uppercase, lowercase, numbers, and/or special characters
   } else {
-   askUpperCase = confirm("Do you want to use uppercase letters?");
-   askLowerCase = confirm("Do you want to use lowercase letters?");
-   askNumeric = confirm("Do you want to use numbers?");
-   askSpecialChar = confirm("Do you want to use special characters?");
-
-   
+    askUpperCase = confirm("Do you want to use uppercase letters?");
+    askLowerCase = confirm("Do you want to use lowercase letters?");
+    askNumeric = confirm("Do you want to use numbers?");
+    askSpecialChar = confirm("Do you want to use special characters?");
   };
-  // TODO -
-  // else {
-  //   var pass = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz1234567890' + '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~';
-  //   for (i = 1; i <= result; i++) {
-  //     var randomstr = Math.ceil((Math.random() * pass.length) + 1);
-  //     str += pass.charAt(randomstr);
-  //   }
-  //   return str;
+
+  var pass = ''; //initialize the values
+  const strUpperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const strLowerCase = 'abcdefghijklmnopqrstuvwxyz';
+  const strNumeric = '1234567890';
+  const strSpecialChar = '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~';
+
+  if (askUpperCase) {
+    pass += strUpperCase;
   }
-  // generate password based on the criteria
-  // console.log(str);
+  if (askLowerCase) {
+    pass += strLowerCase;
+  }
+  if (askNumeric) {
+    pass += strNumeric;
+  }
+  if (askSpecialChar) {
+    pass += strSpecialChar;
+  }
+  // combinations of chosen criteria 
+  if (askUpperCase && askLowerCase && askNumeric && askSpecialChar) { //all prompts clicked 'OK'
+    pass += strLowerCase + strUpperCase + strNumeric + strSpecialChar;
+  }
+
+  if (askUpperCase && askLowerCase) { // first two prompts 'OK'
+    pass += strUpperCase + strLowerCase;
+  }
+  if (askUpperCase && askLowerCase && askNumeric) { // first three prompts 'OK'
+    pass += strUpperCase + strLowerCase + askNumeric;
+  }
+  if (askUpperCase && askNumeric) { // first and third prompt 'OK'
+    pass += strUpperCase + strNumeric;
+  }
+  if (askUpperCase && askSpecialChar) { //first and last prompt 'OK'
+    pass += strUpperCase + strSpecialChar;
+  }
+  if (askLowerCase && askNumeric && askSpecialChar) {
+    pass += strLowerCase + strNumeric + strSpecialChar;
+  }
+  if (askLowerCase && askNumeric) {
+    pass += strLowerCase + strNumeric;
+  }
+  if (askLowerCase && askSpecialChar) {
+    pass += strLowerCase + strSpecialChar
+  }
+  if (askNumeric && askSpecialChar) {
+    pass += strLowerCase + strSpecialChar;
+  }
+  if (!askUpperCase && !askLowerCase && !askNumeric && !askSpecialChar) {
+      window.alert("No password conditions met! Restart your session.");
+
+  }
 
 
-// validate what the user inserts
-  // display the unique password on onto page
+  for (i = 1; i <= result; i++) {
+    var randomstr = Math.ceil((Math.random() * pass.length) + 1);
+    str += pass.charAt(randomstr);
+  }
+  console.log('Password: ', str);
+  return str;
+}
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 

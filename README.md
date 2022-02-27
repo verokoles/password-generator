@@ -34,12 +34,13 @@
   ![Application With the Math.random Portion and NO Criteria](assets/screenshots/password-no-criteria.png)
 
 
+  
+       The next line of code I focused on was the first pop-up window asking the user how many characters they'd like.
+       I set var result = window.prompt("How long do you want your password to be? Note: It must be between 8 and 128 characters!");
+       and the var string set to empty.
+       The user begins by clicking on the 'Generate Password' button. 
+       Automatically a window prompts them to choose how many characters they want their password to be, and they type in their response.
   ![App In Browser Starting Prompt](assets/screenshots/start-prompt-how-many.png)
-      The next line of code I focused on was the first pop-up window asking the user how many characters they'd like.
-      I set var result = window.prompt("How long do you want your password to be? Note: It must be between 8 and 128 characters!");
-      and the var string set to empty.
-      The user begins by clicking on the 'Generate Password' button. 
-      Automatically a window prompts them to choose how many characters they want their password to be, and they type in their response.
 
   
       Next, the variables set to constant jsut assigned arrays to the corresponding name.
